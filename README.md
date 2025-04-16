@@ -57,7 +57,7 @@ A full-stack web application for managing employee records. The backend is built
 ### **Step-by-Step Local Deployment**  
 1. Clone the repository:  
    
-   git clone https://github.com/your-username/employee-management-app.git
+   git clone https://https://github.com/Mithunsingh1
    cd employee-management-app
 Create a MySQL database:
 
@@ -68,7 +68,7 @@ Update src/main/resources/application.properties:
 properties:
 spring.datasource.url=jdbc:mysql://localhost:3306/employee_db
 spring.datasource.username=root
-spring.datasource.password=root
+spring.datasource.password=Mahi@9211
 spring.jpa.hibernate.ddl-auto=update
 Build and run:
 
@@ -245,7 +245,7 @@ Port 8080 already in use	Use server.port=9090 in properties.
 Initialize Git:
 
 git init
-git remote add origin https://github.com/your-username/repo.git
+git remote add origin https://https://github.com/Mithunsingh1
 Commit and push:
 
 
