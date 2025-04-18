@@ -229,14 +229,79 @@ Import the Postman collection and test all endpoints.
 Build with Maven
 
 mvn clean package  # Generates a JAR file in /target
-Deploy to Heroku
-Create a Procfile:
+Option 1: Deploy via Git Repository (Recommended)
+Login to Netlify:
+
+Visit https://app.netlify.com
+
+Sign in using GitHub/GitLab/Bitbucket
+
+Create a New Site:
+
+Click "Add new site" → "Import an existing project"
+
+Connect Repository:
+
+Choose your Git provider (e.g., GitHub)
+
+Authorize and select your project repo
+
+Configure Build Settings:
+
+Branch to deploy: main or master (or your desired branch)
+
+Build command (if using a framework):
+
+React (Create React App): npm run build
+
+Vue: npm run build
+
+Angular: ng build
+
+Publish directory:
+
+React: build
+
+Vue/Angular: dist
+
+Static Site (HTML/CSS): / or root folder
+
+Click “Deploy Site”
+
+Wait for the Build to Finish
+
+Option 2: Deploy via Drag & Drop (Quick Static Hosting)
+Build/export your project (e.g., React: npm run build)
+
+Go to https://app.netlify.com/drop
+
+Drag and drop the build or dist folder
+
+Netlify will host your site instantly
+
+✅ After Deployment
+You’ll receive a Netlify domain: https://your-site-name.netlify.app
+
+You can change it under Site settings → Domain management
+
+⚙️ Advanced Settings (Optional)
+1. Environment Variables (for API keys, etc.)
+Go to Site settings → Environment variables
+
+Add key-value pairs (e.g., REACT_APP_API_URL=https://api.example.com)
+
+2. Continuous Deployment
+Every push to your Git branch will auto-deploy the latest changes
+
+3. Redirects
+Create a _redirects file in your public or root folder for routing (esp. in React apps):
+
+plaintext
+Copy
+Edit
+/* /index.html 200
 
 
-web: java -jar target/employee-management-app-0.0.1-SNAPSHOT.jar
-Push to Heroku Git:
-
-git push heroku master
 10. Troubleshooting
 Error	Solution
 Database connection failed	Check MySQL credentials in application.properties.
