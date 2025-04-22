@@ -297,11 +297,10 @@ Every push to your Git branch will auto-deploy the latest changes
 Create a _redirects file in your public or root folder for routing (esp. in React apps):
 
 plaintext
-Copy
-Edit
+
 /* /index.html 200
 
-
+   #######  Due to some external netlify problem project not deploy.
 10. Troubleshooting
 Error	Solution
 Database connection failed	Check MySQL credentials in application.properties.
